@@ -57,9 +57,11 @@ button{
     display: none;
     font-family: 'Montserrat', sans-serif;
 }
-.carta-p{
+
+.carta-p,.carta-p-2{
     font-size: 0.8rem;
     line-height: 1.7;
+    text-align: center;
 }
 .carta-img{
     padding: 0;
