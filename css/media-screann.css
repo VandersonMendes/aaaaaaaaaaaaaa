@@ -68,6 +68,9 @@
         margin-left: 14%;
         margin-top: 5%
     }
+    ul.animais-lista{
+        width: 70%;
+    }
     .grid-section{
         justify-content: center;
         grid-template-columns: 1fr;
