@@ -90,15 +90,3 @@
     font-family: 'Unbounded', cursive;
     position: relative
 }
-.button-arrow{ 
-    position: absolute;
-    width: 1.8em;
-    height: 2rem;
-    left: 1px;
-    top: 10px;
-    background-color: rgb(139, 36, 36);
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    font-size: 1.2rem; 
-    
-} 
