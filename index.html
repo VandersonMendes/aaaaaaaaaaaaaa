@@ -1,42 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&">
-    <link rel="stylesheet" href="style.css">
-    <title>.</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Animais Fantásticos</title>
 </head>
-<body>
-    <main>
-        <button class="carta">
-            <h1 class="carta-h1">Tenho uma carta para você</h1>
-            <span class="clica">*CLICA EM CIMA*</span>
-            <img id="carta-img" src="love-letter-stroke-icon-by-Vexels.png" alt="img">
-            <div class="decl">
-                <span class="nome">De: Vanderson</span><br>
-                <span class="nome">Para: Júlia</span>
-                <p class="carta-p" id="carta-p">Estou lhe-escrevendo essa carta, mas é dificil eu expressar oq passa em meu coração.Você no meio de tantas entrelas você é q nem a lua foi a que mais me chamou atenção, desde quando eu te conheci, algo mudou dentro do meu coração. Com você eu me sinto tão bem.É muito bom sentir aquele frio na barriga quando eu te vejo, pois é uma sensação de que realmente o meu ser está vivo e é capaz de sentir</p>
-                <br>
-                <p class="carta-p-2">Saiba que saiba q eu te acho uma pessoa maravilhosa, q seu sorriso é encantador e que seu abraço traz calma para á minha alma.Indepedente de como está mensagem vai ser recebida por você, quero que você saiba que eu gosto demais de você e que sempre vou está em seu lado, se você me permitir.</p>
-                <img class="gato-feio" src="emoticon-rosa-vetor-clip-arte_csp8530016.webp" alt="">
+<script>document.documentElement.className += ' js';</script>
+<body class="grid">
+    <!-- CABEÇALHO -->
+       <header class="header-bg">
+           <nav class="menu">
+               <h1><a href="#" class="linkExterno">Animais</a></h1>
+               <div  class="nav">
+                   <ul data-menu="menu">
+                       <li><a href="#animais">Animais</a></li>
+                       <li><a href="#faq">Faq</a></li>
+                       <li data-dropdown="">
+                        <a>Sobre</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" >Empresa</a></li>
+                            <li><a href="#" >Equipe</a></li>
+                            <li><a href="#" >Sócios</a></li>
+                            <li><a href="#"  target="_blank">Investidores</a></li>
+                        </ul>
+                       </li>
+                       <li><a href="#contato">Contato</a></li>
+                       <li><a data-modal="abrir">Login → </a></li>
+                       <button class="sair-menu">X</button>
+                   </ul>
+               </div>
+               <div class="menu-mobile">
+                   <div class="line1"></div>
+                   <div class="line2"></div>
+                   <div class="line3"></div>
+                </div>
+           </nav>
+       </header>
+       <!-- LISTA DE ANIMAIS -->
+           <section class="animais" id="animais">
+            <div class="conteudo-animais opacity2"  data-scroll = "scroll">
+                    <h1 class="titulo">Animais Fantásticos</h1>
+                   <div class="grid-section" >
+                       <ul class="animais-lista " data-tab="menu">
+                           <li><img src="./img/raposa.png" alt=""></li>
+                           <li><img src="./img/imagem2.jpg" alt=""></li>
+                           <li><img src="./img/imagem3.jpg" alt=""></li>
+                           <li><img src="./img/imagem4.jpg" alt=""></li>
+                           <li><img src="./img/imagem5.jpg" alt=""></li>
+                           <li><img src="./img/imagem6.jpg" alt=""></li>
+                       </ul>
+                       <div class="animais-descricao "data-tab="content">
+                           <section class="ativo" data-anime="show-down">
+                               <h2  class="titulo2">Raposa</h2>
+                               <p class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
+                               </p>
+                               <p class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                               <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates id perferendis vitae eum natus adipisci quo molestias reiciendis est, ullam modi perspiciatis beatae aut! Aliquid cumque quam in sed corrupti.</p>
+                               <button class="button"><a href="#">Ver mais</a></button>
+                           </section>
+                           <section data-anime="show-rigth">
+                               <h2 class="titulo2">Esquilo</h2>
+                               <p class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
+                               </p>
+                               <p class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                               <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates id perferendis vitae eum natus adipisci quo molestias reiciendis est, ullam modi perspiciatis beatae aut! Aliquid cumque quam in sed corrupti.</p>
+                           </section>
+                           <section data-anime="show-down">
+                               <h2 class="titulo2">Urso</h2>
+                               <p class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
+                               </p>
+                               <p class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                               <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates id perferendis vitae eum natus adipisci quo molestias reiciendis est, ullam modi perspiciatis beatae aut! Aliquid cumque quam in sed corrupti.</p>
+                           </section>
+                           <section data-anime="show-rigth">
+                               <h2 class="titulo2">Lobo</h2>
+                               <p class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
+                               </p>
+                               <p class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                               <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates id perferendis vitae eum natus adipisci quo molestias reiciendis est, ullam modi perspiciatis beatae aut! Aliquid cumque quam in sed corrupti.</p>
+                           </section>
+                           <section data-anime="show-down">
+                               <h2 class="titulo2">Babuino</h2>
+                               <p class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
+                               </p>
+                               <p class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                               <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates id perferendis vitae eum natus adipisci quo molestias reiciendis est, ullam modi perspiciatis beatae aut! Aliquid cumque quam in sed corrupti.</p>
+                           </section>
+                           <section data-anime="show-rigth">
+                               <h2 class="titulo2">Leão</h2>
+                               <p class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
+                               </p>
+                               <p class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                               <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates id perferendis vitae eum natus adipisci quo molestias reiciendis est, ullam modi perspiciatis beatae aut! Aliquid cumque quam in sed corrupti.</p>
+                           </section>
+                        </div>
+                    </div>
             </div>
-        </button>
-        <div>
-            <p class="p">"Se o universo soubesse o quanto que eu te amo, ele teria vergonha de ser tão perqueno"</p>
+            <!-- FAQ -->
+               <section id="faq" class="faq " data-scroll = "scroll">
+                   <h1 class="titulo">Faq</h1>
+                   <dl data-accordion="accordion">
+                       <dt class="titulo2">Qual a idade dos animais</dt>
+                       <dd class="ativo paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                       <dt class="titulo2" >Eles são Fantásticos</dt>
+                       <dd class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+                       <dt class="titulo2">Qual a diferença</dt>
+                       <dd class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                       <dt class="titulo2">Como proteger</dt>
+                       <dd class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                   </dl>
+               </section>
+               
+                <section class="numeros" data-scroll="scroll">
+                    <h1 class="titulo">Números</h1>
+                    <div class="numeros-grid">
+                        <div class="numero-animal">
+                            <h3 class="titulo2">Lobos</h3>
+                            <span class="paragrafo" data-numero>4874</span>
+                        </div>
+                        <div class="numero-animal">
+                            <h3 class="titulo2">Raposas</h3>
+                            <span class="paragrafo" data-numero>5374</span>
+                        </div>
+                        <div class="numero-animal">
+                            <h3 class="titulo2">Esquilos</h3>
+                            <span class="paragrafo" data-numero>12340</span>
+                        </div>
+                        <div class="numero-animal">
+                            <h3 class="titulo2">Ursos</h3>
+                            <span data-numero class="paragrafo">2340</span>
+                        </div>
+                    </div>
+                </section>
+               <!-- CONTATO -->
+               <section class="contato"  data-scroll = "scroll" id="contato">
+                   <h2 class="titulo">Contato</h2>
+                    <div class="flex-contato">
+                        <div class="img-contato"><img src="img/mapa.png" aria-label="Endereço próximo ao estacionamento" alt="MAPA" data-tooltip ></div>
+                        <ul class="paragrafo">
+                            <li>Contato@origamid.com</li>
+                            <li>+55(21) 999-9999</li>
+                            <li>Rua do conde, N 21</li>
+                            <li>Rio de Janeiro - RJ</li>
+                        </ul>
+                    </div>
+               </section>
+        <!-- Vai ser um section para fazer login -->
+       <section data-modal="container">
+            <form action="" data-modal="form">
+                <button class="buttonArrow">X</button><br>
+                <label for="email">Digite seu email</label>
+                <input type="email" id="email" class="email" 
+                placeholder="Email" data-modal="email" name="email">
+                <smal  data-modal="small-email"l></small>
+                <label for="senha">Passoword</label>
+                <input type="passoword" id="senha" class="senha" placeholder="Passoword" data-modal="passoword"  name="passoword">
+                <small data-modal="small-erro">Email ou senha estão vazios!</small>
+                <button type="submit" class="buttonEnviar">Enviar</button>
+            </form>
+       </section>
+       <section data-funcionamento>
+        <p class="paragrafo " data-semana="1,2,3,4,5" data-horario="8,16">Seg a Sex ás 8hrs as 16hrs / <span>Aberto</span>
+        </p>
+       </section>
+       <!-- Essa section irá ficar com display none para aparecer ao final do body -->
+       <section data-newsletter-flex>
+        <img src="img/newsletter-svgrepo-com.svg" alt="icone-newsletter">
+        <div class="text">
+            <h1>Cadraste-se</h1>
+            <p>Fique por dentro das novidades.</p>
         </div>
-    
-        <div class="card">
-            <h1>Eu te amo muito garotinha</h1>
-            <img class="img coração" src="coração.png" alt="imagem">
-        </div>
-        <p class="footer">@Todos os direitos reservados @2022 </p>
-    </main>
-    </footer>
-    <script src="script.js"></script>
-     
+        <a href="ladding.pages.html" target="_blank">Entre aqui</a> 
+    <section>
+        <!-- Vai aparecer no começo da pagina -->
+       <section data-newsletter>
+            <img src="img/newsletter-svgrepo-com.svg" alt="icone-newsletter">
+            <div class="text">
+                <h1>Cadraste-se</h1>
+                <p>Fique por dentro das novidades.</p>
+            </div>
+            <a href="ladding.pages.html" target="_blank">Entre aqui</a> 
+        <section>
+       <script type="module" src="js/script.js"></script>
 </body>
 </html>

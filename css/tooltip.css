@@ -1,0 +1,9 @@
+.tolltip{
+    position: absolute;
+    background-color: #ffffff42;
+    font-family: 'IBM Plex Mono', monospace;
+    max-width: 150px;
+    padding: 1rem;
+    border: 0.4rem  solid rgb(240, 69, 69);;
+    border-radius: 5%;
+}

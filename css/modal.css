@@ -1,0 +1,87 @@
+/* Modal */
+[data-modal="container"]{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #c2c1c170;
+    z-index: 99999;
+}
+[data-modal="container"].ativo{
+    display: flex;
+}
+[data-modal="form"]{
+    background-color: #FB5;
+    padding: 4rem 3rem;
+    border-radius: 5%;
+    font-family: 'IBM Plex Mono', monospace;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+[data-modal="form"] label{
+    font-size: 1.2rem;
+}
+[data-modal="form"] input::placeholder{
+    padding-left:20px ;
+    font: 1rem;
+    font-weight: 800;
+    
+}
+button.buttonArrow{
+    background-color: red;
+    padding: 0.5rem 1.2rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+button.buttonEnviar{
+    background-color: rgba(255, 238, 0, 0.452);
+    padding: 0.5rem 1.2rem;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 900;
+    width: 100%;
+}
+[data-modal="form"] input{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 5vh;
+    border-radius: 5%;
+    margin-bottom: 1.4rem;
+    padding-left: 0.4rem;
+    cursor: pointer;
+    position: relative;
+    
+}
+button.buttonEnviar{
+    cursor: pointer;
+}
+button.buttonEnviar.erro{
+    background-color: red;
+    transition: 1s all;
+}
+button.buttonEnviar.valid{
+    background-color: rgb(7, 244, 7);
+}
+[data-modal="small-erro"]{
+    color: red;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+[data-modal="small-erro"].ativo{
+    visibility: visible;
+
+}
+[data-modal="email"].erro{
+    border: 3px solid red;
+}
+[data-modal="passoword"].erro{
+    border: 3px solid red;
+}

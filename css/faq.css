@@ -1,0 +1,89 @@
+/* Faq */
+.faq{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+[data-accordion="accordion"] dl{
+    margin:0  2rem;
+}
+.js [data-accordion] dd{
+    display: none;
+    margin: 0 0 1.4rem 2rem;
+    font-size: 1.1rem;
+}
+
+.js  [data-accordion="accordion"] dd.ativo{
+    display: block !important;
+    animation:  show 2s ease-out;
+}
+@keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+[data-accordion="accordion"] {
+    margin-left: 4rem;
+}
+[data-accordion="accordion"]  dt{
+    cursor: pointer;
+    color: #e54;
+    padding-left: 1.4rem;
+    margin-bottom: 1.4rem;
+    position: relative;
+}
+[data-accordion="accordion"]  dt::after{
+    content: "↯";
+    position: absolute;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+
+}
+
+[data-accordion="accordion"]  dt::before{
+    content: "";
+    width: 1.6rem;
+    height: 1.5rem;
+    background-color: #FB5;
+    display: inline-block;
+    left: -10px;
+    bottom: 11px;
+    position: absolute;
+}
+
+/* Contato */
+
+.contato{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-contato{
+    display: flex;
+}
+.contato img{
+    width: 80%;
+}
+.contato ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+    position: relative;
+    margin-left: 2rem;
+}
+.contato ul li::before{
+    content: "";
+    background-color: #FB5;
+    display: inline-block;
+    height: 1rem;
+    width: 1.3rem;
+    position: absolute;
+    left: -30px;
+    bottom: 2px;
+}
+.contato ul{
+    margin-top: 20%;
+}

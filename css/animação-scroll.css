@@ -1,0 +1,12 @@
+/* Animação de Scroll */
+.js [data-scroll="scroll"]{
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+    transition: 1s ease-in-out;
+}
+.js [data-scroll="scroll"].ativo{
+    opacity: 1;
+}
+div.conteudo-animais.opacity2{
+    opacity: 4;
+}

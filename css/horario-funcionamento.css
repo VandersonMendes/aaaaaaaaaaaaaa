@@ -1,0 +1,14 @@
+[data-funcionamento] p{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 6rem 0 auto;
+    padding: 1px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    background-color: red;
+}
+[data-funcionamento] .open{
+    color: rgb(0, 0, 0);
+    background-color: rgb(127, 250, 127);
+}

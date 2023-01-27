@@ -1,0 +1,48 @@
+.header-bg{
+    background: #FB5;
+}
+.menu{
+    padding: 2rem 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu h1{
+    color: rgb(150, 3, 3);
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 1rem;
+    /* margin-right: 5rem; */
+    font-size: 2.4rem;
+    line-height: 2px;
+    z-index: 2;
+}
+.nav li , .nav a{
+    text-decoration: none;
+    list-style: none;
+    margin:1rem 0.5rem;
+    font: 600 1.2rem/1 IBM Plex Mono, monospace;
+    color: black;
+    transition: 1s all;
+}
+.nav a:hover{
+   opacity: 0.4;
+   transition: 1s all;
+}
+.nav li{
+    display: inline;
+}
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+}
+.menu-mobile div{
+    height: 4px;
+    width: 30px;
+    background-color: rgb(236, 236, 236);
+    margin:7px;
+}
+.sair-menu{
+    display: none;
+}

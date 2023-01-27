@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+.titulo{
+    font-family: 'Unbounded', cursive;
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 2rem 0;
+}
+.titulo2{
+    font: 800 2.2rem/1.3 'IBM Plex Mono', monospace
+}
+.paragrafo{
+    font: 400 1em/1.3 verdana, monospace;
+}
+.link-menu{
+    font: 600 1.2rem/1 'IBM Plex Mono', monospace;
+}
+@media (max-width:1200px) {
+    .titulo{
+        margin-left: 4rem;
+        font-size: 3rem;
+        
+    }
+    .titulo2{
+        font: 800 2rem/1.3 'IBM Plex Mono', monospace
+    }
+}
+@media (max-width:800px) {
+    .titulo2{
+        font: 800 1.7rem/1.3 'IBM Plex Mono', monospace
+    }
+    .paragrafo{
+        font: 400 0.9rem/1.3 verdana, monospace;
+    }
+}
+@media (max-width:600px) {
+    .titulo2{
+        font: 800 1.6rem/1.3 'IBM Plex Mono', monospace
+    }
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .paragrafo{
+        font: 400 0.8rem/1.3 verdana, monospace;
+    }
+}
+@media (max-width:400px) {
+    .titulo{
+        font-size: 2rem;
+    }
+}

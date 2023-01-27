@@ -1,0 +1,136 @@
+
+
+.grid-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+.animais{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.animais-lista{
+    height: 659px;
+    overflow-x: hidden;
+    margin-left: 3rem;
+    padding-right:4px;
+}
+.animais-lista::before{
+    content: "*Clique em cima de cada animal*";
+    font-family: 'IBM Plex Mono', monospace;
+    opacity: 0.4;
+    display: block;
+    text-align: center;
+
+}
+.animais-lista::-webkit-scrollbar-thumb{
+    background: #FB5;
+    border: 3px solid rgb(27, 27, 27);
+    border-radius: 20px;
+    max-height: 100px;
+}
+.animais-lista::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgba(187, 187, 187, 0.151);
+}
+
+.animais-lista li{
+    list-style: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 4px solid rgb(124, 36, 1);
+}
+.animais-lista li img{
+    transition: 1s all;
+}
+.animais-lista li img:hover{
+    translate: 2px;
+    transition: 1s all;
+    opacity: 0.8;
+}
+.animais-descricao h2{
+    color: #e54;
+    position: relative;
+    margin-left: 1.7rem;
+}
+.animais-descricao h2::before{
+    content: "";
+    width: 1.6rem;
+    height: 1.5rem;
+    background-color: #FB5;
+    display: inline-block;
+    left: -30px;
+    bottom: 11px;
+    position: absolute;
+    
+}
+.animais-descricao section{
+    margin-top: 30%;
+
+}
+.js [data-tab="content"] section{
+    display: none;
+}
+[data-tab="content"] section.ativo{
+    display:  block !important;
+}
+
+[data-tab="content"] section.ativo.show-rigth{
+    animation:  show-rigth 3s forwards;
+}
+[data-tab="content"] section.ativo.show-down{
+    animation:  show-down 3s forwards;
+}
+@keyframes show-down {
+    from {
+      opacity: 0;
+      transform: translate3d(0px, -50px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+
+.animais-descricao p{
+    margin: 0.5rem 0;
+
+}
+.button{
+    border-color: transparent;
+    background-color:#e54;
+    padding: 0.6rem 2rem;
+    border-radius: 3%;
+}
+.button a{
+    color: rgb(19, 17, 17);
+    font-weight: 700;
+}
+.conteudo-animais{
+    margin-bottom: 8rem;
+}
+@keyframes show-rigth {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0px,0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0px, 0, 0);
+    }
+  };
+@media (max-width:600px) {
+    .animais-descricao h2::before{
+        content: "";
+        width: 1.6rem;
+        height: 1.1rem;
+        background-color: #FB5;
+        display: inline-block;
+        left: -30px;
+        bottom: 11px;
+        position: absolute;
+        
+    }
+}

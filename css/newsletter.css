@@ -1,0 +1,104 @@
+[data-newsletter]{
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+    background: rgb(67,0,97);
+    background: linear-gradient(292deg, rgba(67,0,97,1) 0%, rgba(105,0,163,1) 75%);
+    color: #fff;
+    height: 14vh;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 0.5rem;
+    left: 0rem;
+    background-color: #c2c1c170;
+    z-index: 9999;
+    position: fixed;
+}
+[data-newsletter-flex]{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: rgb(67,0,97);
+    background: linear-gradient(292deg, rgba(67,0,97,1) 0%, rgba(105,0,163,1) 75%);
+    color: #fff;
+    height: 14vh;
+    width: 100%;
+    align-items: center;
+    margin: 0rem auto;
+    bottom: 2rem;
+    background-color: #c2c1c170;
+    z-index: 9999;
+
+}
+[data-newsletter].active{
+    display: flex;
+    animation:  show-down 1s linear;
+}
+
+@keyframes show-down {
+    from {
+      opacity: 0;
+      transform: translate3d(0px, 0px, -50);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+
+[data-newsletter] img{
+    width: 5%;
+    margin: 0 4rem;
+}
+[data-newsletter-flex] img{
+    width: 5%;
+    margin: 0 4rem;
+}
+[data-newsletter] .text{
+    margin: 0 1rem;
+    max-width: 300px;
+    font-family: 'Unbounded', cursive;
+}
+[data-newsletter-flex] .text{
+    margin: 0 1rem;
+    max-width: 300px;
+    font-family: 'Unbounded', cursive;
+}
+
+[data-newsletter] a{
+    background-color: #0000;
+    border: 2px solid #ffff;
+    padding: 0.1rem 20px;
+    color: #ffff;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Unbounded', cursive;
+    position: relative;
+}
+[data-newsletter-flex] a{
+    background-color: #0000;
+    border: 2px solid #ffff;
+    padding: 0.1rem 20px;
+    color: #ffff;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Unbounded', cursive;
+    position: relative
+}
+.button-arrow{ 
+    position: absolute;
+    width: 1.8em;
+    height: 2rem;
+    left: 1px;
+    top: 10px;
+    background-color: rgb(139, 36, 36);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.2rem; 
+    
+} 
