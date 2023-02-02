@@ -1,4 +1,26 @@
-export default function initAnimarNumber(){
+export default function initFetchAnimais(){
+    // Pega do arquivo JSON com os dados dos animais
+    try{
+        async function fetchAnimais(url){
+            const animaisResponse = await fetch(url);
+            const animaisJSON = await animaisResponse.json();
+            const numeroGrid = document.querySelector(".numeros-grid");
+            animaisJSON.forEach(animal =>{
+                const divAnimal  = createAnimal(animal);
+                numeroGrid.appendChild(divAnimal)
+            });
+        };
+    fetchAnimais('../animais.json') 
+    }catch(erro){
+        console.log(Error(erro))
+    }
+    function createAnimal(animal){
+        const div = document.createElement("div");
+        div.classList.add("numero-animal");
+        div.innerHTML = `<h3 class="titulo2">${animal.specie}</h3><span data-numero class="paragrafo">${animal.total}</span>`
+        return div;
+    }
+    // -----ANIMAÇÃO DOS NUMEROS
     // função de ativação do menu.
     function ativarAnimarMenu(){
         const numeros = document.querySelectorAll('[data-numero]');
@@ -33,5 +55,7 @@ export default function initAnimarNumber(){
     }
     const observeItem = document.querySelector(".numeros")
     const observer = new MutationObserver(handleMutation)
-    observer.observe(observeItem, {attributes:true})
+    observer.observe(observeItem, {attributes:true});
 }
+
+

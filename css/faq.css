@@ -87,3 +87,7 @@
 .contato ul{
     margin-top: 20%;
 }
+[data-bit]{
+    background: rgb(0, 255, 76);
+    padding: 2px;
+}
