@@ -17,31 +17,12 @@
 
 ## 🔧 Tools
 
-- [Node](https://nodejs.org) 💚
-- [React](https://reactjs.org)
-- [React Native](https://reactnative.dev)
+<div>
+    <img align="center" alt="Andressa-html" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+    <img align="center" alt="Andressa-css" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+    <img align="center" alt="Andressa-js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+</div>
 
-## 👨‍💻 How to Setup
-
-```bash
-  # Clone the project
-  $ git clone https://github.com/Ezever/Projeto-NASA.git
-```
-```bash
-  # Enter directory
-  $ cd Projeto-NASA
-```
-
-```bash
-  # Install the dependencies, if you use npm
-  $ npm install
-```
-<p align="center">or</p>
-
-```bash
-  # Install the dependencies, if you use yarn
-  $ yarn
-```
 
 ## 📝 License
 
@@ -49,5 +30,5 @@ This project is under the MIT license. See the file <a href="https://github.com/
 
 ---
 
-<p align="center">Done with 💙 by João Victor Ramalho Alves</p>
+<p align="center">Done with 💙 by Vanderson Dias Mendes</p>
 
