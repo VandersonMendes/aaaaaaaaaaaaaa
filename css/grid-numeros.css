@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-left: 6em;
-    gap: 20px;
+    gap: 21px;
 }
 span.paragrafo{
     padding-top: 1rem;
